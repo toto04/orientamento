@@ -1,0 +1,31 @@
+<html>
+<head>
+  <title>Salone Nervi-Ferrari</title>
+  <script type="text/javascript" src = "phonescript.js?n=1"></script>
+  <script>
+    //Un paio di variabili che verranno usate nello script effettivo
+    var two = false;
+    var tempo = 20000;
+  </script>
+  <link rel="stylesheet" type="text/css" href="phonestyle.css">
+</head>
+  <body>
+    <div id="header">
+      <div id="titolo"><h1>NUM</h1></div>
+  		<div id="timerPost"></div>
+    </div>
+    <div id = "displayAnswers">
+      <div id = barra></div>
+      <button class="rosso opzione" type="button" onclick="sendResponse(1)">A</button>
+      <button class="blu opzione" type="button" onclick="sendResponse(2)">B</button>
+      <button class="giallo opzione" type="button" onclick="sendResponse(3)">C</button>
+      <button class="verde opzione" type="button" onclick="sendResponse(4)">D</button>
+    </div>
+    <div id = "displayResults">
+      <div class = "res"> <p id = "data"></p> </div>
+      <div class = "res"> <p id = "esito">In attesa...</p> </div>
+      <div class = "res"> <p id = "punteggio"><br></p> </div>
+    </div>
+    <img alt="Immagine Nervi" src="Immagini/Logonervi.png" id="nervi">
+  </body>
+</html>

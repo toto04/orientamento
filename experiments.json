@@ -1,0 +1,98 @@
+[
+	{
+		"title" : "1 - Come spegnere una fiamma?",
+		"ques" : [
+			{
+				"question" : "Perché la candela si spegne?",
+				"answers" : [
+					"Perché nel barattolo è presente vapore acqueo",
+					"Per la differenza di temperatura",
+					"Perché nel barattolo è presente anidride carbonica",
+					"Per lo spostamento dell’aria"
+				],
+				"correct" : "C",
+				"millis" : "20000"
+			},
+			{
+				"question" : "Perché il fumo è rimasto nel bicchiere?",
+				"answers" : [
+					"Perché si è raffreddato",
+					"Perché è più pesante dell’aria",
+					"Perché viene attratto dal vetro",
+					"Perché viene trattenuto dall’anidride carbonica"
+				],
+				"correct" : "D",
+				"millis" : "20000"
+			}
+		],
+		"imgURL" : "/Immagini/fiamma.jpg"
+	},
+	{
+		"title" : "2 - Quanto zucchero vuole?",
+		"ques" : [
+			{
+				"question" : "Cosa succederà nel cilindro?",
+				"answers" : [
+					"Le 3 miscele si mescolano e diventano una miscela sola",
+					"Si forma un precipitato sul fondo",
+					"Le miscele si dispongono dal basso verso l’alto in base alla quantità di zucchero",
+					"Le miscele si dispongono in base al colore, in basso quello più scuro"
+				],
+				"correct" : "C",
+				"millis" : "15000"
+			}
+		],
+		"imgURL" : "/Immagini/QuantoZuccheroVuole.jpg"
+	},
+	{
+		"title" : "3 - Fluido non newtoniano",
+		"ques" : [
+			{
+				"question" : "Perché il fluido non newtoniano si comporta in modo inusuale?",
+				"answers" : [
+					"In base allo sforzo di taglio applicato",
+					"A causa della sua stratificazione interna",
+					"A seconda della temperatura di ciò che lo colpisce",
+					"A seconda della forma di ciò che lo colpisce"
+				],
+				"correct" : "A",
+				"millis" : "20000"
+			}
+		],
+		"imgURL" : "/Immagini/FluidoNonNewtoniano.jpg"
+	},
+	{
+		"title" : "4 - Vulcano chimico",
+		"ques" : [
+			{
+				"question" : "Durante la reazione viene liberata energia sotto quale forma?",
+				"answers" : [
+					"Termica",
+					"Sonora",
+					"Elettrica",
+					"Luminosa"
+				],
+				"correct" : "A",
+				"millis" : "20000"
+			}
+		],
+		"imgURL" : "/Immagini/VulcanoChimico.jpg"
+	},
+	{
+		"title" : "5 - Reazione o non reazione?",
+		"ques" : [
+			{
+				"question" : "Cosa succederà?",
+				"answers" : [
+					"Cambia colore",
+					"Non succede niente",
+					"Esplode",
+					"Fa le bolle"
+				],
+				"correct" : "A",
+				"millis" : "20000"
+			}
+		],
+		"imgURL" : "/Immagini/reaz.jpg"
+	}
+]

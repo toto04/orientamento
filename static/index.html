@@ -1,0 +1,108 @@
+﻿<html>
+	<head>
+		<title>Quiz Nervi-Ferrari</title>
+		<script type="text/javascript" src = "script.js?n=2"></script>
+		<script>
+			//Un paio di variabili che verranno usate nello script effettivo, possono essere modificate
+			//dal server quando restituisce la richiesta
+			var two = false;
+			var tempo = 20000;
+		</script>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<div id = "header">															<!--Testa della pagina-->
+			<div id="titolo"><h1>TITOLO</h1></div>
+			<div id="domanda"><h2>DOMANDA</h2></div>
+			<div id="timerPost"></div>
+		</div>
+
+		<div id = "displayAnswers">													<!--Riquadro generale della schermata domanda-->
+			<div id="options" class="display">										<!--Riquadro contenente le quattro opzioni di risposta-->
+				<div class="opzione rosso bordoRosso"><p>A) RISPOSTA1</p></div>
+				<div class="space"></div>
+				<div class="opzione blu bordoBlu"><p>B) RISPOSTA2</p></div>
+				<div class="space"></div>
+				<div class="opzione giallo bordoGiallo"><p>C) RISPOSTA3</p></div>
+				<div class="space"></div>
+				<div class="opzione verde bordoVerde"><p>D) RISPOSTA4</p></div>
+			</div>
+			<div id = "espImg" class="display"></div>								<!--Riquadro contenente l'immagine dell'esperimento-->
+		</div>
+		<div id="displayResults">													<!--Riquadro generale della schermata dopo la domanda-->
+			<div class="display">													<!--Riquadro contenente la il grafico risposte (che in realtà sarebbe una tabella)-->
+				<table>
+					<tr>
+						<td class="graph"></td>
+						<td class="graph"></td>
+						<td class="graph"></td>
+						<td class="graph"></td>
+					</tr>
+					<tr>
+						<td class="graph"></td>
+						<td class="graph"></td>
+						<td class="graph"></td>
+						<td class="graph"></td>
+					</tr>
+					<tr>
+						<td class="graph"></td>
+						<td class="graph"></td>
+						<td class="graph"></td>
+						<td class="graph"></td>
+					</tr>
+					<tr>
+						<td class="graph"></td>
+						<td class="graph"></td>
+						<td class="graph"></td>
+						<td class="graph"></td>
+					</tr>
+					<tr>															<!--Riga di intestazione in basso-->
+						<th class="graph rosso bordoRosso">A (NA)</th>
+						<th class="graph blu bordoBlu">B (NB)</th>
+						<th class="graph giallo bordoGiallo">C (NC)</th>
+						<th class="graph verde bordoVerde">D (ND)</th>
+					</tr>
+				</table>
+			</div>
+			<div class="display">
+				<table id="collapse">												<!--Tabella della classifica-->
+					<tr></tr>
+					<tr class="bd">
+						<td class="rank" id="I"><p>1</p></td>
+						<td class="squadra">SQUADRA1</td>
+						<td class="answ">ANS1</td>
+						<td class="tot">PUNT1</td>
+						<td class="gain">(+GAIN1)</td>
+					</tr>
+					<tr class="tabspace"></tr>
+					<tr class="bd">
+						<td class="rank" id="II">2</td>
+						<td class="squadra">SQUADRA2</td>
+						<td class="answ">ANS2</td>
+						<td class="tot">PUNT2</td>
+						<td class="gain">(+GAIN2)</td>
+					</tr>
+					<tr class="tabspace"></tr>
+					<tr class="bd">
+						<td class="rank" id="III">3</td>
+						<td class="squadra">SQUADRA3</td>
+						<td class="answ">ANS3</td>
+						<td class="tot">PUNT3</td>
+						<td class="gain">(+GAIN3)</td>
+					</tr>
+					<tr class="tabspace"></tr>
+					<tr class="bd">
+						<td class="rank" id="IV">4</td>
+						<td class="squadra">SQUADRA4</td>
+						<td class="answ">ANS4</td>
+						<td class="tot">PUNT4</td>
+						<td class="gain">(+GAIN4)</td>
+					</tr>
+					<tr></tr>
+				</table>
+			</div>
+		</div>
+
+		<img alt="Immagine Nervi" src="Immagini/Logonervi.png" id="nervi">			<!--Logo del nervi in alto (scritto in basso, eh? bello l'HTML)-->
+	</body>
+</html>

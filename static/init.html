@@ -1,0 +1,31 @@
+<head>
+  <title>Quiz Nervi-Ferrari</title>
+  <script>
+    //scriptino rapidissimo per passare oltre
+    window.onload = init
+    function init() {
+      document.onkeyup = (e) => {
+        if (e.key == " ") {
+          window.location = "/play/1" //carica la prima pagina
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style media="screen">
+    /*Stra a cazzo*/
+    #nervi {
+      position: fixed;
+      height: 40%;
+      top: 38%;
+      left: 44%;
+      border: thin black hidden;
+    }
+  </style>
+</head>
+<body>
+  <div id = "header" style = "heigth: 100%;">
+    <div id="titolo"><h1>Benvenuti!</h1></div>
+  </div>
+  <img alt="Immagine Nervi" src="Immagini/Logonervi.png" id="nervi">
+</body>

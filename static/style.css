@@ -1,0 +1,189 @@
+﻿body {
+  font-family: "Comic Sans Ms";
+  background-color: #ffffff;
+}
+h1 {
+  font-size: 8vh;
+  margin: auto;
+  color: #8077f4;
+}
+
+h2 {
+	margin:auto;
+	color:#fe8e8a;
+}
+p {
+  margin: auto;
+}
+table {
+  position: relative;
+  left: 5%;
+  width: 90%;
+  height: 100%;
+}
+th {
+	width: 100%;
+	border: medium #CCCCCC outset;
+}
+
+div {
+  left: 5%;
+}
+.opzione {
+	display: flex;
+	box-sizing: border-box;
+	color: black;
+	position: relative;
+	width: 90%;
+	height: 18%;
+}
+.rosso {
+	background-color: #FF0000;
+}
+.blu {
+	background-color: #0099FF;
+}
+.giallo{
+	background-color: #FFFF00;
+}
+.verde{
+	background-color: #00CC00;
+}
+.bordoRosso{
+	border: thick #CC0000 inset;
+
+}
+.bordoBlu{
+	border: thick#0064A6 inset;
+
+}
+.bordoGiallo{
+	border: thick#CC9900 inset;
+
+}
+.bordoVerde{
+	border: thick #006600 inset;
+
+}
+.space{
+	height:9%;
+}
+.graph {
+	width: 25%;
+	height: 20%;
+}
+.bd {
+	border: medium #000000 double;
+	height: 10%;
+}
+
+.rank{
+	font-weight:bold;
+  width: 10%;
+  text-align:center;
+}
+
+.squadra {
+	text-align:center;
+  width: 35%;
+}
+
+.answ {
+	text-align:center;
+  width: 15%;
+}
+
+.tot {
+	text-align:right;
+  width: 20%;
+}
+
+.gain {
+  width: 20%;
+}
+
+.tabspace {
+	height:8%;
+}
+
+.display{
+  height: 100%;
+  float: left;
+  width: 50%;
+}
+#nervi {
+  position: fixed;
+  height: 25%;
+  top: 10px;
+  left: 10px;
+  border: thin black hidden;
+}
+#header {
+  height: 30%;
+  text-align: center;
+  font-size: 40px;
+}
+#titolo {
+}
+
+#domanda {
+  	display:block;
+  font-style:italic;
+}
+#timerPost {
+  text-align: center;
+  margin: auto;
+  font-size: 5vh;
+  width: 85%;
+  height: 6vh;
+  left: 90%;
+}
+
+#displayAnswers {
+	display:block;
+	height: 70%;
+  width: 100%;
+}
+
+#options {
+  display: block;
+}
+#espImg {
+	display:block;
+  position: relative;
+  width: 40%;
+  background-image:url('Immagini/esp.jpg');
+  background-position: center;
+  align-items: center;
+}
+
+#displayResults{
+	display:block;
+  height: 70%;
+  width: 100%;
+}
+
+/* .squadra {
+	color: black;
+	margin-left: 60%;
+	width: 40%;
+	right: 5%;
+} */
+
+#collapse{
+	border-collapse:collapse;
+}
+
+#I{
+	background-image:url('Immagini/Gold.png');
+}
+#II{
+	background-image:url('Immagini/Silver.png');
+
+}
+#III{
+	background-image:url('Immagini/Bronze.png');
+}
+#IV {
+
+}

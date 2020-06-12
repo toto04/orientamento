@@ -1,0 +1,44 @@
+Il server è il file main.js, che gestisce dinamicamente le richieste
+Viene avviato attraverso node.js (https://nodejs.org)
+Installare node.js integra anche il suo gestore di moduli NPM
+
+l'unico modulo da cui dipende (non installato di default) è quello per gestire le richieste, express (http://expressjs.com)
+In teoria tutte le dependecies sono già installate nella cartella node_modules
+Nel caso basta fare
+	npm install
+Per installare tutto quello che c'è nel package.json, (sebbene ci sia solo express)
+(per installare i moduli si usa il comanda "npm install modulo --save")
+
+Per avviare il server navigare tramite la console di comando fino all'interno di questa cartella, poi il comando è:
+	node main.js
+In teoria dovrebbe la porta 80 su cui si apre il server è accessibile solo da amministratori, su sistemi unix-based (linux / macOS):
+	sudo main.js
+Su windows credo sia tipo:
+	runas /noprofile /user:Administrator node main.js
+Boh qualcosa di simile, al massimo cambiate la porta e mettete, che so, 8080
+L'url dovrebbe essere accessibile a http://localhost se con la porta 80, altrimenti http://localhost:8080 o qualsiasi altra porta
+
+
+Il file main.js carica i file HTML e gestisce le richieste, dinamiche che siano come per far partire i timer, restituire i punteggi...
+Gestisce anche le richieste più statiche, magicamente da anche i file css e javascript, le immagini e tutte ste cose qui
+
+Il file main.js carica dal file experiments.json gli esperimenti così:
+il file json è strutturato come un array di oggetti con diversi parametri, quali il titolo dell'esperimento, l'url dell'immagine (nella cartella immagini)
+il parametro "ques" è un'ulteriore array di oggetti, che contengono la domanda, un'array di 4 risposte, la lettera della risposta corretta, e il tempo disponibile per rispondere
+
+il file main.js si occupa di interpretare questo array di oggetti per poter restituire informazioni coerenti nell'html / nelle richieste tipo quelle per i risultati
+
+
+Parlando d'altro il file script.js gestisce la pagina del computer che veniva proiettata, fa cose tipo gestire la pressione di spazio.
+Chiede inoltre il punteggio, le risposte date, sta roba qua, tramite AJAX (Asynchronous JavaScript and XML), manda richieste asincrone al server, e usa il testo che ottiene in risposta dal Server
+
+Il file phonescript.js (nella pagina del telefono) fa una bellissima cosa chiamata pulling, sempre tramite AJAX chiede OGNI SINGOLO SECONDO al server se deve rispondere alla domanda o no, cioè
+è una pagina da un byte che viene chiamata ogni secondo, non è poi tutto sto traffico alla fine. Una volta che scopre che c'è la domanda in atto entra in modalità risposta
+
+Boh questo è abbastanza tutto
+
+
+Link utili:
+API di express, documentazioni con tutto il funzionamento dei metodi che ho usato:	http://expressjs.com/en/4x/api.html
+documentazioni con il funzionamento del modulo fs per la lettura di json / html:	https://nodejs.org/api/fs.html
+Introduzione ed esempio di implementazione AJAX, con spiegazione in inglese:		https://www.w3schools.com/xml/ajax_intro.asp
